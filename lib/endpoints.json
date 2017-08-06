@@ -479,6 +479,19 @@
             }
         }
     },
+    "getMemberProfiles": {
+        "resource": "https://api.meetup.com/:urlname/members",
+        "method": "get",
+        "test": {
+            "params": {
+                "urlname": "SydEthereum"
+            },
+            "return": {
+                "type": "object",
+                "keys": ["results", "meta"]
+            }
+        }
+    },
     "getProfile": {
         "resource": "https://api.meetup.com/2/profile/:gid/:mid",
         "method": "get",
